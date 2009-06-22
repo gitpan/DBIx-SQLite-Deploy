@@ -30,6 +30,7 @@ _END_
 Carp::Clan::Share
 DBD::SQLite
 Moose
+Path::Class
 SQL::Script
 Template
 _END_

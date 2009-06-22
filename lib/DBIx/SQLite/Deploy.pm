@@ -9,11 +9,11 @@ DBIx::SQLite::Deploy - Easy SQLite deployment
 
 =head1 VERSION
 
-Version 0.010
+Version 0.011
 
 =cut
 
-our $VERSION = '0.010';
+our $VERSION = '0.011';
 
 =head1 SYNOPSIS
 
@@ -224,6 +224,7 @@ sub connect {
 }
 
 before connect => sub {
+    require Path::Class;
     my $self = shift;
     my $database = Path::Class::Dir->new( $self->database );
     $database->parent->mkpath unless -d $database->parent;

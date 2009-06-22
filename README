@@ -2,7 +2,7 @@ NAME
     DBIx::SQLite::Deploy - Easy SQLite deployment
 
 VERSION
-    Version 0.010
+    Version 0.011
 
 SYNOPSIS
         # ::Deploy will create the 'path/to' for you if it does not already exist
